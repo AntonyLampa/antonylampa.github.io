@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato</title>
+        <link rel="stylesheet" href="estiloCSS.css">
+        <style>
+            .main{
+                display: block;
+            }
+            form {
+                height: 80%;
+                width: 100%;
+                border-radius: 50px;
+            }
+            fieldset {
+                border-radius: 50px;
+                padding-left: 50px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="images/Logo.png" width="100" height="100">
+                <h1>Shape Total</h1>
+            </div>
+            <div class="main">
+                <h2>Nos Mande Sugestões ou Reclamações</h2>
+                <form action="contactar.html" method="post">
+                    <fieldset>
+                        <label>Nome</label> <br>
+                        <input type="text" name="nome" style="width: 25%;"> <br/> <br/>
+                        <label>E-mail</label> <br>
+                        <input type="email" name="email" style="width: 25%;"> <br/> <br/>
+                        <label>Gênero:</label>
+                        <input type="radio" value="1" name="genero">
+                        <label>Masculino</label>
+                        <input type="radio" value="2" name="genero">
+                        <label>Feminino</label>
+                        <input type="radio" value="3" name="genero">
+                        <label>Outro</label> <br> <br>
+                        <label>Comentários</label> <br>
+                        <textarea name="comentarios" rows="5" cols="30" style="width: 25%;"></textarea> <br> <br>
+                        <input type="submit" value="enviar">
+                        <input type="reset" value="limpar">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="sidebar">
+                <img src="images/Logo.png" width="100" height="100"> <br> <br>
+                <a href="index.html">Home</a> <br> <br>
+                <a href="Sobre.html">Sobre Nós</a> <br> <br>
+                <a href="NossosProdutos.html">Produtos</a> <br> <br>
+                <a href="Galeria.html">Galeria</a> <br> <br>
+                <a href="Contato.html" id="paginaAtual">Contato</a> <br> <br>
+                <a href="Blog.html">Blog</a>
+            </div>
+            <div class="footer">
+                <p>&copy; Feito por Antony Felipe Lampa - 837795</p>
+            </div>
+        </div>
+    </body>
+</html>

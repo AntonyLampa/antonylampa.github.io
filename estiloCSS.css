@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+    "sidebar header header"
+    "sidebar main main"
+    "sidebar footer footer";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    height: 100vh;
+}
+.header{
+    grid-area: header;
+    background-color: #484A47;
+    color: rgb(251, 251, 251);
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+}
+.main {
+    grid-area: main;
+    background-color: #e2e2e2;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.sidebar{
+    align-items: center;
+    grid-area: sidebar;
+    background-color: #484A47;        
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 200px;
+    margin: 0;
+    position: fixed;
+}
+.footer{
+    grid-area: footer;
+    background-color: #586A6A;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+}
+p{
+    font-size: 18px;
+    font-family: "Playwrite DE Grund", cursive;
+}
+#paginaAtual{
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+h1{
+    font-family: "Playwrite DE Grund", cursive;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+.sidebar a:hover {
+    color: #E88873;
+}
+img {
+    border-radius: 30%;
+}
+h2 {
+    text-align: center;
+}
+article{
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #eee;
+    margin: 10px;
+    height: 90%;
+}
